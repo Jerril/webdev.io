@@ -1,0 +1,273 @@
+body {
+	color: #707070;
+	font-family: 'Overpass', 'Segoe UI', 'Helvetica Neue', Helvetica, sans-serif;
+	font-weight: 300;
+	line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+	color: #141414;
+	display: block;
+	font-weight: 800;
+	margin: .2em 0;
+}
+
+h1, .h1 {
+	font-size: 3em;
+}
+
+h2, .h2 {
+	font-size: 2.5em;
+}
+
+h3, .h3 {
+	font-size: 2em;
+}
+
+h4, .h4 {
+	font-size: 1.5em;
+}
+
+h5, .h5 {
+	font-size: 1.2em;
+}
+
+h6, .h6 {
+	font-size: 1em;
+}
+
+p {
+	font-size: .95em;
+	line-height: 1.7;
+	margin: 0 0 1.5rem;
+}
+
+strong, b {
+	color: #474747;
+	font-weight: 700;
+}
+
+em, i {
+	color: #474747;
+}
+
+a {
+	color: #0055bd;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+ul, ol {
+	margin: 1.5rem 0;
+	padding: 0 0 0 1.5rem;
+}
+
+li {
+	line-height: 1.7;
+	font-size: .95em;
+}
+
+blockquote {
+	background-color: #f8f8f8;
+	margin: 1.5rem 0;
+	padding: 1.5rem 2rem;
+	position: relative;
+}
+blockquote :first-child {
+	margin-top: 0;
+}
+blockquote :last-child {
+	margin-bottom: 0;
+}
+blockquote::after {
+    content: "\61";
+    font-family: "webdev" !important;
+    font-style: normal !important;
+    font-weight: normal !important;
+    font-variant: normal !important;
+    text-transform: none !important;
+    speak: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+	
+	color: #74C539;
+	font-size: 4rem;
+    position: absolute;
+    bottom: -32px;
+    right: 20px;
+}
+
+/* buttons */
+.btn {
+	background-color: #f0f0f0;
+	border: 0;
+	color: #474747;
+	cursor: pointer;
+	display: inline-block;
+	font-family: inherit;
+	font-size: .9em;
+	font-weight: 700;
+	line-height: 1;
+	padding: 1em 2em;
+	text-transform: uppercase;
+	transition: all .3s ease;
+	vertical-align: middle;
+}
+
+.btn:hover,
+.btn:active {
+	background-color: #fafafa;
+	text-decoration: none;
+}
+
+.btn:focus {
+	outline: 1px solid #0071bd;
+}
+
+/* button sizes */
+.btn.sm {
+	font-size: .7em;
+}
+.btn.lg {
+	font-size: 1.2em;
+}
+
+/* button styles */
+.btn.rounded {
+	border-radius: 100px;
+}
+.btn.outline {
+	background-color: transparent;
+	border: 1px solid #C2C2C2;
+}
+.btn.outline:hover {
+	border-color: #0A0A0A;
+	color: #0A0A0A;
+}
+
+/* button color */
+.btn.primary {
+	background-color: #0071bd;
+	color: #fff;
+}
+.btn.primary:hover {
+	background-color: #0A9DFF;
+}
+
+.btn.primary.outline {
+	background-color: transparent;
+	border-color: #0071bd;
+	color: #0071bd;
+}
+.btn.primary.outline:hover {
+	border-color: #001623;
+	color: #001623;
+}
+
+.btn.light.outline {
+	background-color: transparent;
+	border-color: #fff;
+	color: #fff;
+}
+.btn.light.outline:hover {
+	background-color: #fff;
+	color: #101010;
+}
+
+/*forms*/
+.form {
+
+}
+
+.form--group {
+	display: block;
+	margin-bottom: 1rem;
+	position: relative;
+}
+
+.form--label {
+	font-size: .9em;
+}
+
+.form--input {
+	border: 0;
+	background-color: #EBF7FF;
+	font-size: .9em;
+	padding: 1rem 1rem;
+	width: 100%;
+}
+
+
+.form--textarea {
+	border: 0;
+	background-color: #EBF7FF;
+	font-size: .9em;
+	min-height: 100px;
+	padding: .6rem 1rem;
+	width: 100%;
+}
+
+/*helper*/
+.sr-only {
+	position:absolute;
+	left:-10000px;
+	top:auto;
+	width:1px;
+	height:1px;
+	overflow:hidden;
+}
+
+/*validation*/
+.help-block {
+	display: block;
+}
+
+.help.help-block {
+	display: none;
+}
+
+.form-error {
+	color: #E0471E;
+	font-size: .9em;
+	font-weight: 600;
+	margin-top: .3rem;
+}
+
+.form--character-count {
+	font-size: .9em;
+	text-align: right;
+}
+
+@media (min-width: 768px) {
+	.help.help-block {
+		background-color: #0092F4;
+		box-shadow: 0 0 15px rgba(0,0,0,.4);
+		bottom: 115%;
+		border-radius: 5px;
+		color: #fff;
+		font-size: .9em;
+		line-height: 2.4rem;
+		padding: 0 1rem;
+		position: absolute;
+		right: 0;
+	}
+
+	.help.help-block::after {
+		background-color: #0092F4;
+		content: "";
+		display: block;
+		height: 10px;
+		left: 50%;
+		margin-left: -5px;
+		margin-top: -5px;
+		position: absolute;
+		top: 100%;
+		transform: rotate(45deg);
+		width: 10px;
+	}
+}
